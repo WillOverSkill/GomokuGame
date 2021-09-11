@@ -14,13 +14,8 @@
         <link rel="stylesheet" href="style.css">
 
         <!-- game code -->
-        <!-- <script src="script.js"></script> -->
+        <script src="script.js"></script>
 
-        <script>
-            function click(id) {
-                alert(id);
-            }
-        </script>
     </head>
 
     <body style="background-color: whitesmoke;">
@@ -40,264 +35,264 @@
                 <!-- board -->
                 <div class="col-xl-9">
                     <div class="row">
-                        <button class="tile text-center" id="A1" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A2" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A3" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A4" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A5" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A6" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A7" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A8" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="A9" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AA" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AB" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AC" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AD" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AE" onclick="click(this.id)"></button>
-                        <button class="tile text-center" id="AF" onclick="click(this.id)"></button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="A9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="AF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">B1</button>
-                        <button class="tile">B2</button>
-                        <button class="tile">B3</button>
-                        <button class="tile">B4</button>
-                        <button class="tile">B5</button>
-                        <button class="tile">B6</button>
-                        <button class="tile">B7</button>
-                        <button class="tile">B8</button>
-                        <button class="tile">B9</button>
-                        <button class="tile">BA</button>
-                        <button class="tile">BB</button>
-                        <button class="tile">BC</button>
-                        <button class="tile">BD</button>
-                        <button class="tile">BE</button>
-                        <button class="tile">BF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="B9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="BF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">C1</button>
-                        <button class="tile">C2</button>
-                        <button class="tile">C3</button>
-                        <button class="tile">C4</button>
-                        <button class="tile">C5</button>
-                        <button class="tile">C6</button>
-                        <button class="tile">C7</button>
-                        <button class="tile">C8</button>
-                        <button class="tile">C9</button>
-                        <button class="tile">CA</button>
-                        <button class="tile">CB</button>
-                        <button class="tile">CC</button>
-                        <button class="tile">CD</button>
-                        <button class="tile">CE</button>
-                        <button class="tile">CF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="C9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="CF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">D1</button>
-                        <button class="tile">D2</button>
-                        <button class="tile">D3</button>
-                        <button class="tile">D4</button>
-                        <button class="tile">D5</button>
-                        <button class="tile">D6</button>
-                        <button class="tile">D7</button>
-                        <button class="tile">D8</button>
-                        <button class="tile">D9</button>
-                        <button class="tile">DA</button>
-                        <button class="tile">DB</button>
-                        <button class="tile">DC</button>
-                        <button class="tile">DD</button>
-                        <button class="tile">DE</button>
-                        <button class="tile">DF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="D9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="DF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">E1</button>
-                        <button class="tile">E2</button>
-                        <button class="tile">E3</button>
-                        <button class="tile">E4</button>
-                        <button class="tile">E5</button>
-                        <button class="tile">E6</button>
-                        <button class="tile">E7</button>
-                        <button class="tile">E8</button>
-                        <button class="tile">E9</button>
-                        <button class="tile">EA</button>
-                        <button class="tile">EB</button>
-                        <button class="tile">EC</button>
-                        <button class="tile">ED</button>
-                        <button class="tile">EE</button>
-                        <button class="tile">EF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="E9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="EA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="EB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="EC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="ED" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="EE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="EF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">F1</button>
-                        <button class="tile">F2</button>
-                        <button class="tile">F3</button>
-                        <button class="tile">F4</button>
-                        <button class="tile">F5</button>
-                        <button class="tile">F6</button>
-                        <button class="tile">F7</button>
-                        <button class="tile">F8</button>
-                        <button class="tile">F9</button>
-                        <button class="tile">FA</button>
-                        <button class="tile">FB</button>
-                        <button class="tile">FC</button>
-                        <button class="tile">FD</button>
-                        <button class="tile">FE</button>
-                        <button class="tile">FF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="F9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="FF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">G1</button>
-                        <button class="tile">G2</button>
-                        <button class="tile">G3</button>
-                        <button class="tile">G4</button>
-                        <button class="tile">G5</button>
-                        <button class="tile">G6</button>
-                        <button class="tile">G7</button>
-                        <button class="tile">G8</button>
-                        <button class="tile">G9</button>
-                        <button class="tile">GA</button>
-                        <button class="tile">GB</button>
-                        <button class="tile">GC</button>
-                        <button class="tile">GD</button>
-                        <button class="tile">GE</button>
-                        <button class="tile">GF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="G9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="GF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">H1</button>
-                        <button class="tile">H2</button>
-                        <button class="tile">H3</button>
-                        <button class="tile">H4</button>
-                        <button class="tile">H5</button>
-                        <button class="tile">H6</button>
-                        <button class="tile">H7</button>
-                        <button class="tile">H8</button>
-                        <button class="tile">H9</button>
-                        <button class="tile">HA</button>
-                        <button class="tile">HB</button>
-                        <button class="tile">HC</button>
-                        <button class="tile">HD</button>
-                        <button class="tile">HE</button>
-                        <button class="tile">HF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="H9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="HF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">I1</button>
-                        <button class="tile">I2</button>
-                        <button class="tile">I3</button>
-                        <button class="tile">I4</button>
-                        <button class="tile">I5</button>
-                        <button class="tile">I6</button>
-                        <button class="tile">I7</button>
-                        <button class="tile">I8</button>
-                        <button class="tile">I9</button>
-                        <button class="tile">IA</button>
-                        <button class="tile">IB</button>
-                        <button class="tile">IC</button>
-                        <button class="tile">ID</button>
-                        <button class="tile">IE</button>
-                        <button class="tile">IF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="I9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="IA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="IB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="IC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="ID" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="IE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="IF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">J1</button>
-                        <button class="tile">J2</button>
-                        <button class="tile">J3</button>
-                        <button class="tile">J4</button>
-                        <button class="tile">J5</button>
-                        <button class="tile">J6</button>
-                        <button class="tile">J7</button>
-                        <button class="tile">J8</button>
-                        <button class="tile">J9</button>
-                        <button class="tile">JA</button>
-                        <button class="tile">JB</button>
-                        <button class="tile">JC</button>
-                        <button class="tile">JD</button>
-                        <button class="tile">JE</button>
-                        <button class="tile">JF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="J9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="JF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">K1</button>
-                        <button class="tile">K2</button>
-                        <button class="tile">K3</button>
-                        <button class="tile">K4</button>
-                        <button class="tile">K5</button>
-                        <button class="tile">K6</button>
-                        <button class="tile">K7</button>
-                        <button class="tile">K8</button>
-                        <button class="tile">K9</button>
-                        <button class="tile">KA</button>
-                        <button class="tile">KB</button>
-                        <button class="tile">KC</button>
-                        <button class="tile">KD</button>
-                        <button class="tile">KE</button>
-                        <button class="tile">KF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="K9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="KF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">L1</button>
-                        <button class="tile">L2</button>
-                        <button class="tile">L3</button>
-                        <button class="tile">L4</button>
-                        <button class="tile">L5</button>
-                        <button class="tile">L6</button>
-                        <button class="tile">L7</button>
-                        <button class="tile">L8</button>
-                        <button class="tile">L9</button>
-                        <button class="tile">LA</button>
-                        <button class="tile">LB</button>
-                        <button class="tile">LC</button>
-                        <button class="tile">LD</button>
-                        <button class="tile">LE</button>
-                        <button class="tile">LF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="L9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="LF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">M1</button>
-                        <button class="tile">M2</button>
-                        <button class="tile">M3</button>
-                        <button class="tile">M4</button>
-                        <button class="tile">M5</button>
-                        <button class="tile">M6</button>
-                        <button class="tile">M7</button>
-                        <button class="tile">M8</button>
-                        <button class="tile">M9</button>
-                        <button class="tile">MA</button>
-                        <button class="tile">MB</button>
-                        <button class="tile">MC</button>
-                        <button class="tile">MD</button>
-                        <button class="tile">ME</button>
-                        <button class="tile">MF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="M9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="MA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="MB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="MC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="MD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="ME" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="MF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">N1</button>
-                        <button class="tile">N2</button>
-                        <button class="tile">N3</button>
-                        <button class="tile">N4</button>
-                        <button class="tile">N5</button>
-                        <button class="tile">N6</button>
-                        <button class="tile">N7</button>
-                        <button class="tile">N8</button>
-                        <button class="tile">N9</button>
-                        <button class="tile">NA</button>
-                        <button class="tile">NB</button>
-                        <button class="tile">NC</button>
-                        <button class="tile">ND</button>
-                        <button class="tile">NE</button>
-                        <button class="tile">NF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="N9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="NA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="NB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="NC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="ND" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="NE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="NF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                     <div class="row">
-                        <button class="tile">O1</button>
-                        <button class="tile">O2</button>
-                        <button class="tile">O3</button>
-                        <button class="tile">O4</button>
-                        <button class="tile">O5</button>
-                        <button class="tile">O6</button>
-                        <button class="tile">O7</button>
-                        <button class="tile">O8</button>
-                        <button class="tile">O9</button>
-                        <button class="tile">OA</button>
-                        <button class="tile">OB</button>
-                        <button class="tile">OC</button>
-                        <button class="tile">OD</button>
-                        <button class="tile">OE</button>
-                        <button class="tile">OF</button>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O1" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O2" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O3" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O4" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O5" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O6" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O7" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O8" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="O9" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OA" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OB" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OC" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OD" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OE" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
+                        <div class="d-inline-flex align-items-center justify-content-center tile" id="OF" onclick="clickTurn(this.id)" onmouseover="mouseOver(this.id)" onmouseout="mouseOut(this.id)"></div>
                     </div>
                 </div>
 
                 <!-- move tracker -->
-                <div class="col-3">
+                <div class="col-xl-3">
                     test2
                 </div>
 
