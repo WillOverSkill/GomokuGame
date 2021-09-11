@@ -4,6 +4,8 @@
 const rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"];
 // all column names
 const cols = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+// track which turn: true = white, false = black
+var turn = true;
 
 // function to determine row or col number
 // isRow: true = row; false = column
@@ -34,5 +36,20 @@ function toLetter(isRow = true, num = 0) {
     }
 
     return cols[num - 1];
+
+}
+
+function click(id = "") {
+
+    alert("before check");
+
+    // do nothing if invalid input
+    if(id.length == 0) return;
+
+    alert(id);
+
+    document.getElementById(id).innerHTML = turn ? "x" : "o";
+
+    turn = !turn;
 
 }

@@ -3,6 +3,7 @@
     height: 5vh;
     max-width: 6%;
     max-height: 4vw;
+    min-height: 2vw;
     border: 1px solid hsl(0, 0%, 65%);
     box-shadow: 0;
 }
