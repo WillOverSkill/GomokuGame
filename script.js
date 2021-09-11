@@ -6,6 +6,82 @@ const maxCols = 15;
 var turn = false; // track which turn: true = white, false = black
 var moves = [];
 
+// reset the game
+function reset() {
+
+    // grab the board div
+    const board = document.getElementById("board");
+
+    // remove all content on the board
+    board.innerHTML = "";
+
+    // render the board
+    // start with column labels
+    board.appendChild(colLabels()); // append to board
+
+    // create each row including row labels
+    for(var i = 1; i <= maxRows; i++) {
+        board.appendChild(createRow(i)); // append to board
+    }
+
+    // reset variables
+    turn = false;
+    moves = [];
+    document.getElementById("header").innerHTML = "A game of connect 5.";
+
+}
+
+// create the column labels at top of board
+function colLabels() {
+
+    var row = document.createElement("div");
+    row.className = "row";
+
+    var label = document.createElement("div");
+    label.className = "d-inline-flex align-items-center justify-content-center tile tile-label"
+    row.appendChild(label); // append to row
+
+    for(var i = 1; i <= maxRows; i++) {
+        label = document.createElement("div");
+        label.className = "d-inline-flex align-items-center justify-content-center tile tile-label"
+        label.innerHTML = toLetter(false, i);
+
+        row.appendChild(label); // append to row
+    }
+
+    return row;
+
+}
+
+// create a row of the game board
+function createRow(i) {
+
+    // create row
+    var row = document.createElement("div");
+    row.className = "row";
+
+    // create label for row
+    var label = document.createElement("div");
+    label.className = "d-inline-flex align-items-center justify-content-center tile tile-label"
+    label.innerHTML = toLetter(true, i);
+
+    row.appendChild(label); // append to row
+
+    for(var j = 1; j <= maxCols; j++) {
+        var tile = document.createElement("div");
+        tile.className = "d-inline-flex align-items-center justify-content-center tile";
+        tile.id = convertID([i, j]);
+        tile.onclick = function() { clickTurn(this.id) };
+        tile.onmouseover = function() { mouseOver(this.id) };
+        tile.onmouseout = function() { mouseOut(this.id) };
+
+        row.appendChild(tile); // append to row
+    }
+
+    return row;
+
+}
+
 // function to determine row or col number
 // isRow: true = row; false = column
 // str = string to convert to number
@@ -103,6 +179,13 @@ function clickTurn(id = "") {
     // next turn;
     turn = !turn;
 
+    // display turn
+    if(turn) {
+        document.getElementById("header").innerHTML = "White player's turn.";
+    } else {
+        document.getElementById("header").innerHTML = "Black player's turn.";
+    }
+
 }
 
 // function to check if a player has won
@@ -148,6 +231,8 @@ function checkRow(xy, wb) {
         col -= 1;
         if(checkTile([xy[0], col], wb)) {
             length += 1;
+        } else {
+            break; // encountered another color
         }
     }
 
@@ -160,6 +245,8 @@ function checkRow(xy, wb) {
         col += 1;
         if(checkTile([xy[0], col], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -181,6 +268,8 @@ function checkCol(xy, wb) {
         row -= 1;
         if(checkTile([row, xy[1]], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -193,6 +282,8 @@ function checkCol(xy, wb) {
         row += 1;
         if(checkTile([row, xy[1]], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -216,6 +307,8 @@ function checkDiag(xy, wb) {
         col -= 1;
         if(checkTile([row, col], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -229,6 +322,8 @@ function checkDiag(xy, wb) {
         col += 1;
         if(checkTile([row, col], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -244,6 +339,8 @@ function checkDiag(xy, wb) {
         col += 1;
         if(checkTile([row, col], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
@@ -257,6 +354,8 @@ function checkDiag(xy, wb) {
         col -= 1;
         if(checkTile([row, col], wb)) {
             length += 1;
+        } else {
+            break;
         }
     }
 
