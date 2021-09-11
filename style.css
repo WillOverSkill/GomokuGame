@@ -1,0 +1,12 @@
+.tile {
+    width: 4vw;
+    height: 5vh;
+    max-width: 6%;
+    max-height: 4vw;
+    border: 1px solid hsl(0, 0%, 65%);
+    box-shadow: 0;
+}
+
+.tile:hover {
+    background-color: hsl(0, 0%, 60%);
+}
