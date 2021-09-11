@@ -5,6 +5,7 @@ const maxRows = 15;
 const maxCols = 15;
 var turn = false; // track which turn: true = white, false = black
 var moves = [];
+var gameOver = false;
 
 // reset the game
 function reset() {
@@ -26,8 +27,10 @@ function reset() {
 
     // reset variables
     turn = false;
+    gameOver = false;
     moves = [];
     document.getElementById("header").innerHTML = "A game of connect 5.";
+    moveUpdate(true);
 
 }
 
@@ -153,6 +156,7 @@ function clickTurn(id = "") {
 
     // do nothing if invalid input
     if(id.length == 0) return;
+    if(gameOver) return;
 
     // if already clicked, then do nothing
     var content = document.getElementById(id).innerText;
@@ -169,12 +173,21 @@ function clickTurn(id = "") {
     var win = checkWin(id);
 
     if(win == 1) {
+        gameOver = true;
         alert("White has won!");
     }
 
     if(win == -1) {
+        gameOver = true;
         alert("Black as won!");
     }
+
+    // track move
+    if(turn) moves.push(["White", id]);
+    else moves.push(["Black", id]);
+
+    // update move tracker
+    moveUpdate();
 
     // next turn;
     turn = !turn;
@@ -375,6 +388,48 @@ function checkTile(xy, wb) {
 
     return false;
 
+}
+
+// update move tracker
+function moveUpdate(reset = false) {
+
+    // reset
+    if(reset) {
+        document.getElementById("moves").innerHTML = "";
+    }
+
+    var append = false; // append to moves or not
+
+    // use existing list if available, if not create new one
+    var list = document.getElementById("moves-list");
+    if(list === null) {
+        list = document.createElement("div");
+        list.className = "list-group list-group-numbered";
+        list.id = "moves-list";
+        append = true;
+    }
+
+    // loop through each move
+    for(var i = 0; i < moves.length; i++) {
+
+        // do nothing if exists already
+        var move = document.getElementById("move-" + (i + 1));
+        if(move !== null) continue;
+
+        // create if not exist
+        move = document.createElement("button");
+        move.className = "list-group-item list-group-item-action";
+        move.innerHTML = (i + 1) + " " + moves[i][0] + ": " + moves[i][1];
+        move.id = "move-" + (i + 1);
+
+        list.appendChild(move);
+    }
+
+    // only append if list did not exist before
+    if(append) {
+        document.getElementById("moves").appendChild(list);
+    }
+    
 }
 
 // hover over a square shows next piece
