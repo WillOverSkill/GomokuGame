@@ -3,7 +3,8 @@ const rows = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "
 const cols = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]; // all column names
 const maxRows = 15;
 const maxCols = 15;
-var turn = true; // track which turn: true = white, false = black
+var turn = false; // track which turn: true = white, false = black
+var moves = [];
 
 // function to determine row or col number
 // isRow: true = row; false = column
@@ -51,6 +52,15 @@ function convertXY(id = "") {
 
 }
 
+function convertID(xy = [0, 0]) {
+
+    // invalid input, do nothing
+    if(xy[0] == 0 || xy[1] == 0) return;
+
+    return rows[xy[0] - 1] + cols[xy[1] - 1];
+
+}
+
 // function to render white or black pieces
 function piece(str = "") {
 
@@ -82,6 +92,14 @@ function clickTurn(id = "") {
     // check if win
     var win = checkWin(id);
 
+    if(win == 1) {
+        alert("White has won!");
+    }
+
+    if(win == -1) {
+        alert("Black as won!");
+    }
+
     // next turn;
     turn = !turn;
 
@@ -94,12 +112,169 @@ function checkWin(id = "") {
     // invalid input, do nothing
     if(id.length == 0) return;
 
-    // get coordinates
-    var xy = convertXY(id);
+    var xy = convertXY(id); // get coordinates
+    var wb = document.getElementById(id).innerText; // get which piece
 
     // check row if win
+    if(checkRow(xy, wb)) {
+        if(wb === "w") return 1;
+        if(wb === "b") return -1;
+    }
 
     // check col if win
+    if(checkCol(xy, wb)) {
+        if(wb === "w") return 1;
+        if(wb === "b") return -1;
+    }
+
+    // check diag if win
+    if(checkDiag(xy, wb)) {
+        if(wb === "w") return 1;
+        if(wb === "b") return -1;
+    }
+
+    // no win yet
+    return 0;
+}
+
+// returns true if row has 5 or more pieces of same color consecutively
+function checkRow(xy, wb) {
+
+    var col = xy[1];
+    var length = 1; // start at length 1 since player just put down a piece
+
+    // check one side
+    while(col > 1) {
+        col -= 1;
+        if(checkTile([xy[0], col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    col = xy[1]; // reset
+
+    // check other side
+    while(col < 15) {
+        col += 1;
+        if(checkTile([xy[0], col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    // no win yet
+    return false;
+
+}
+
+// returns true if col has 5 or more pieces of same color consecutively
+function checkCol(xy, wb) {
+
+    var row = xy[0];
+    var length = 1; // start at length 1 since player just put down a piece
+
+    // check one side
+    while(row > 1) {
+        row -= 1;
+        if(checkTile([row, xy[1]], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    row = xy[0]; // reset
+
+    // check other side
+    while(row < 15) {
+        row += 1;
+        if(checkTile([row, xy[1]], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    // no win yet
+    return false;
+
+}
+
+// returns true if diagonal has 5 or more pieces of same color consecutively
+function checkDiag(xy, wb) {
+
+    var row = xy[0];
+    var col = xy[1];
+    var length = 1; // start at length 1 since player just put down a piece
+
+    // check one
+    while(row > 1 && col > 1) {
+        row -= 1;
+        col -= 1;
+        if(checkTile([row, col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    row = xy[0]; // reset
+    col = xy[1]; // reset
+
+    while(row < 15 && col < 15) {
+        row += 1;
+        col += 1;
+        if(checkTile([row, col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    row = xy[0]; // reset
+    col = xy[1]; // reset
+    length = 1; // reset
+
+    // check two
+    while(row > 1 && col < 15) {
+        row -= 1;
+        col += 1;
+        if(checkTile([row, col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    row = xy[0]; // reset
+    col = xy[1]; // reset
+
+    while(row < 15 && col > 1) {
+        row += 1;
+        col -= 1;
+        if(checkTile([row, col], wb)) {
+            length += 1;
+        }
+    }
+
+    if(length >= 5) return true;
+
+    // no win yet
+    return false;
+
+}
+
+// check if a single tile matches input text
+function checkTile(xy, wb) {
+    
+    var id = convertID(xy);
+
+    if(wb === document.getElementById(id).innerText) return true;
+
+    return false;
 
 }
 

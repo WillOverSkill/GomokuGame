@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+.tile-label {
+    background-color: transparent;
+    border: 0;
+}
+
 .w {
     background-color: hsl(0, 0%, 100%);
     border-radius: 50%;
