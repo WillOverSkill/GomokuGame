@@ -1,8 +1,7 @@
 .tile {
-    width: 4vw;
+    width: 6%;
     height: 5vh;
-    max-width: 6%;
-    max-height: 4vw;
+    max-height: 5vw;
     min-height: 2vw;
     border: 1px groove hsl(30, 90%, 80%);
     background-color: hsl(30, 90%, 70%);
